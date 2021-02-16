@@ -1,0 +1,3 @@
+include ':carroussel'
+include ':app'
+rootProject.name = "PluginCaroussel"
