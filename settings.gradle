@@ -1,3 +1,2 @@
-include ':carroussel'
-include ':app'
+include ':app', ':carroussel'
 rootProject.name = "PluginCaroussel"
