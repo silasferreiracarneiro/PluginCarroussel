@@ -25,7 +25,7 @@ class CarousselView(context: Context, attrs: AttributeSet) : ConstraintLayout(co
     }
 
     private fun init(view: View) {
-
+        
     }
 
     fun setListCaroussel(lista: List<ModelCaroussel>) {
