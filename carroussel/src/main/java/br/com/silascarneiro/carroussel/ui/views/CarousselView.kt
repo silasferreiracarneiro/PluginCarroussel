@@ -2,7 +2,10 @@ package br.com.silascarneiro.carroussel.ui.views
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.EventLog
+import android.util.Log
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentActivity
@@ -22,10 +25,22 @@ class CarousselView(context: Context, attrs: AttributeSet) : ConstraintLayout(co
     init {
         val view = LayoutInflater.from(context).inflate(R.layout.view_caroussel_photo, this, true)
         init(view)
+        configureInfinityAdapter()
+    }
+
+    private fun configureInfinityAdapter() {
+//        pager.setOnTouchListener { _, event ->
+//            if (event.action == MotionEvent.ACTION_DOWN) {
+//                Log.d("INITIAL X", "ACTION_DOWN")
+//            }else if(event.action == MotionEvent.ACTION_MOVE){
+//                Log.d("INITIAL X", "ACTION_MOVE")
+//            }
+//            false
+//        }
     }
 
     private fun init(view: View) {
-        
+
     }
 
     fun setListCaroussel(lista: List<ModelCaroussel>) {
